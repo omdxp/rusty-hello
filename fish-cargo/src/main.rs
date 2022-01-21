@@ -1,17 +1,10 @@
 fn main() {
-    print_numbers_to(10);
-}
+    // here
+    let x = 10;
+    {
+        // isolated has access to outside data
+        let y = 5;
 
-fn print_numbers_to(n: u8) {
-    for i in 0..n {
-        if is_even(i) {
-            println!("{} is even", i)
-        } else {
-            println!("{} is odd", i)
-        }
+        println!("x: {} y: {}", x, y)
     }
-}
-
-fn is_even(n: u8) -> bool {
-    return n % 2 == 0;
 }

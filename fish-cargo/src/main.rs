@@ -1,13 +1,10 @@
 fn main() {
-    let mut n = 0;
-    loop {
+    let mut n = 1;
+
+    while n <= 50 {
+        if n % 5 == 0 {
+            println!("{}", n);
+        }
         n += 1;
-        if n == 7 {
-            continue;
-        }
-        println!("{}", n);
-        if n == 10 {
-            break;
-        }
     }
 }

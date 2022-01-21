@@ -1,16 +1,12 @@
+use std::fs::File;
+use std::io::prelude::*;
+
 fn main() {
-    // let my_vector: Vec<i32> = Vec::new();
-    let mut my_vector = vec![1, 2, 3, 4];
+    let mut file = File::open("info.txt").expect("Can't open file!");
 
-    println!("{}", my_vector[2]);
+    let mut contents = String::new();
+    file.read_to_string(&mut contents)
+        .expect("Oops! Can not read the file...");
 
-    my_vector.push(5);
-
-    println!("{}", my_vector[4]);
-
-    my_vector.remove(1); // remove the element at index 1 (2)
-
-    for numver in my_vector.iter() {
-        println!("{}", numver);
-    }
+    println!("File Contents:\n\n{}", contents)
 }

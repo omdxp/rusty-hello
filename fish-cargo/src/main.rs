@@ -1,10 +1,15 @@
 fn main() {
-    // here
-    let x = 10;
-    {
-        // isolated has access to outside data
-        let y = 5;
+    let mut x = 10;
 
-        println!("x: {} y: {}", x, y)
+    {
+        let x = 15;
+
+        // do stuff with 15
     }
+
+    let x = "X is a string";
+    println!("{}", x);
+
+    let x = true;
+    println!("{}", x);
 }

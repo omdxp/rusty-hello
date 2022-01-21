@@ -1,31 +1,19 @@
-struct Person {
-    name: String,
-    age: u8,
-}
-
-trait HasVoiceBox {
-    // speak
-    fn speak(&self);
-    // check if can speak
-    fn can_speak(&self) -> bool;
-}
-
-impl HasVoiceBox for Person {
-    fn speak(&self) {
-        println!("{} says hello", self.name);
-    }
-
-    fn can_speak(&self) -> bool {
-        self.age > 18
-    }
-}
-
 fn main() {
-    let omar = Person {
-        name: String::from("Omar"),
-        age: 23,
-    };
-    if omar.can_speak() {
-        omar.speak()
+    let number = 6;
+
+    match number {
+        1 => println!("one"),
+        2 => println!("two"),
+        3 => println!("three"),
+        4..=9 => println!("four to nine"),
+        10 | 11 => println!("ten or eleven"),
+        _ => println!("anything"),
+    }
+
+    let name = "Yasser";
+    match name {
+        "Omar" => println!("Omar"),
+        "Yasser" => println!("Yasser"),
+        _ => println!("anyone else"),
     }
 }

@@ -1,20 +1,22 @@
 fn main() {
-    let numbers = [1, 2, 3, 4, 5];
-    // let numbers: [i32; 5] = [1, 2, 3, 4, 5];
+    let mut my_string = String::from("How's it going? My name is Fish");
 
-    numbers[0]; // 1
-    numbers[4]; // 5
-
-    for n in numbers.iter() {
-        println!("{}", n)
+    // length
+    println!("Length: {}", my_string.len());
+    // Is Empty?
+    println!("String is empty? {}", my_string.is_empty());
+    for token in my_string.split_whitespace() {
+        println!("{}", token);
     }
 
-    for i in 0..numbers.len() {
-        println!("{}", numbers[i])
-    }
+    println!("{}", my_string.replace("Fish", "FISH"));
+    my_string.push_str(" and I'm a Rustacean!");
+    println!("{}", my_string);
 
-    let numbers2 = [2; 400];
-    for n in numbers2.iter() {
-        println!("{}", n)
-    }
+    println!("{}", my_string.chars().count());
+    println!("{}", my_string.chars().rev().collect::<String>());
+    println!(
+        "Does the string contain 'Fish'? {}",
+        my_string.contains("Fish")
+    );
 }

@@ -1,10 +1,9 @@
 fn main() {
-    // The macro bellow prints "Hello, fish!" in the console
-    /*
-        Here is the fishes in
-        the basket:
-        - salmon
-        - tuna
-    */
-    println!("Hello, fish!");
+    let mut x = 23;
+    
+    println!("x is {}", x);
+
+    x = 42;
+
+    println!("x is {}", x);
 }

@@ -1,9 +1,31 @@
-use std::fs::File;
-use std::io::prelude::*;
+struct Person {
+    name: String,
+    age: u8,
+}
+
+trait HasVoiceBox {
+    // speak
+    fn speak(&self);
+    // check if can speak
+    fn can_speak(&self) -> bool;
+}
+
+impl HasVoiceBox for Person {
+    fn speak(&self) {
+        println!("{} says hello", self.name);
+    }
+
+    fn can_speak(&self) -> bool {
+        self.age > 18
+    }
+}
 
 fn main() {
-    let mut file = File::create("hello.txt").expect("Could not create file!");
-
-    file.write_all(b"Hello, fish!")
-        .expect("Could not write to file!");
+    let omar = Person {
+        name: String::from("Omar"),
+        age: 23,
+    };
+    if omar.can_speak() {
+        omar.speak()
+    }
 }

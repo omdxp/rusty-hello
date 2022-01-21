@@ -1,10 +1,16 @@
 fn main() {
-    let mut n = 1;
+    for i in 0..10 {
+        println!("{}", i);
+    }
+    let numbers = 30..51;
 
-    while n <= 50 {
-        if n % 5 == 0 {
-            println!("{}", n);
-        }
-        n += 1;
+    for i in numbers {
+        println!("{}", i);
+    }
+
+    let animals = vec!["cat", "dog", "cow", "fish"];
+
+    for (i, a) in animals.iter().enumerate() {
+        println!("{} {}", i, a);
     }
 }

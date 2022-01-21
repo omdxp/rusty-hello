@@ -1,12 +1,8 @@
-use std::fs::File;
-use std::io::prelude::*;
+use std::env;
 
 fn main() {
-    let mut file = File::open("info.txt").expect("Can't open file!");
+    let args: Vec<String> = env::args().collect();
+    println!("{:?}", args);
 
-    let mut contents = String::new();
-    file.read_to_string(&mut contents)
-        .expect("Oops! Can not read the file...");
-
-    println!("File Contents:\n\n{}", contents)
+    println!("{}", args[1]);
 }

@@ -1,21 +1,17 @@
-mod fish {
-    fn fish() {
-        println!("Fish");
-    }
-
-    pub fn print_message() {
-        fish();
-        println!("How's it going!")
-    }
-
-    pub mod day {
-        pub fn fish() {
-            println!("Day fish");
+fn main() {
+    println!(
+        "Omar is {}",
+        match get_occupation("Omar") {
+            Some(o) => o,
+            None => "a fish",
         }
-    }
+    );
 }
 
-fn main() {
-    fish::print_message();
-    fish::day::fish()
+fn get_occupation(name: &str) -> Option<&str> {
+    match name {
+        "Omar" => Some("Sr. Fullstack Engineer"),
+        "Jenny" => Some("Chiropractor"),
+        _ => None,
+    }
 }

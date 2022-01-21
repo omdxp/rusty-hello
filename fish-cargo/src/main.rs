@@ -1,19 +1,12 @@
+use std::io;
+
 fn main() {
-    let number = 6;
+    let mut input = String::new();
 
-    match number {
-        1 => println!("one"),
-        2 => println!("two"),
-        3 => println!("three"),
-        4..=9 => println!("four to nine"),
-        10 | 11 => println!("ten or eleven"),
-        _ => println!("anything"),
-    }
+    println!("Enter your name:");
 
-    let name = "Yasser";
-    match name {
-        "Omar" => println!("Omar"),
-        "Yasser" => println!("Yasser"),
-        _ => println!("anyone else"),
+    match io::stdin().read_line(&mut input) {
+        Ok(_) => println!("Hello, {}", input.trim()),
+        Err(error) => println!("Error: {}", error),
     }
 }

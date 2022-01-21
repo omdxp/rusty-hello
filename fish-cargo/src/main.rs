@@ -1,19 +1,20 @@
-struct Color {
-    red: u8,
-    green: u8,
-    blue: u8,
-}
-
 fn main() {
-    let blue = Color {
-        red: 0,
-        green: 0,
-        blue: 255,
-    };
-    print_color(&blue);
-    print_color(&blue)
-}
+    let numbers = [1, 2, 3, 4, 5];
+    // let numbers: [i32; 5] = [1, 2, 3, 4, 5];
 
-fn print_color(c: &Color) {
-    println!("Color - R:{} G:{} B:{}", c.red, c.green, c.blue);
+    numbers[0]; // 1
+    numbers[4]; // 5
+
+    for n in numbers.iter() {
+        println!("{}", n)
+    }
+
+    for i in 0..numbers.len() {
+        println!("{}", numbers[i])
+    }
+
+    let numbers2 = [2; 400];
+    for n in numbers2.iter() {
+        println!("{}", n)
+    }
 }

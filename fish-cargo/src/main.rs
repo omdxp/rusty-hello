@@ -1,22 +1,18 @@
-fn main() {
-    let mut my_string = String::from("How's it going? My name is Fish");
+struct Person {
+    name: String,
+    age: u8,
+}
 
-    // length
-    println!("Length: {}", my_string.len());
-    // Is Empty?
-    println!("String is empty? {}", my_string.is_empty());
-    for token in my_string.split_whitespace() {
-        println!("{}", token);
+impl ToString for Person {
+    fn to_string(&self) -> String {
+        format!("{} is {} years old", self.name, self.age)
     }
+}
 
-    println!("{}", my_string.replace("Fish", "FISH"));
-    my_string.push_str(" and I'm a Rustacean!");
-    println!("{}", my_string);
-
-    println!("{}", my_string.chars().count());
-    println!("{}", my_string.chars().rev().collect::<String>());
-    println!(
-        "Does the string contain 'Fish'? {}",
-        my_string.contains("Fish")
-    );
+fn main() {
+    let omar = Person {
+        name: String::from("Omar"),
+        age: 23,
+    };
+    println!("{}", omar.to_string());
 }

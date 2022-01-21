@@ -1,17 +1,7 @@
-enum Directions {
-    Up,
-    Down,
-    Left,
-    Right,
-}
+const MAX_NUMBER: u8 = 255;
 
 fn main() {
-    let player_direction: Directions = Directions::Down;
-
-    match player_direction {
-        Directions::Up => println!("Going up!"),
-        Directions::Down => println!("Going down!"),
-        Directions::Left => println!("Going left!"),
-        Directions::Right => println!("Going right!"),
+    for n in 1..MAX_NUMBER {
+        println!("{}", n);
     }
 }

@@ -1,9 +1,18 @@
+struct Color {
+    red: u8,
+    green: u8,
+    blue: u8,
+}
+
 fn main() {
-    let mut x = 10;
-    // let xr = &x;
+    // color: red, green, blue
+    let mut color = Color {
+        red: 255,
+        green: 0,
+        blue: 0,
+    };
 
-    let o = &mut x;
-    *o += 1;
+    color.blue = 45;
 
-    println!("{}", x);
+    println!("{}, {}, {}", color.red, color.green, color.blue)
 }

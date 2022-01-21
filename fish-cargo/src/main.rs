@@ -1,43 +1,38 @@
-struct Rectangle {
-    width: u32,
-    height: u32,
+extern crate serde;
+extern crate serde_json;
+#[macro_use]
+extern crate serde_derive;
+
+// use serde_json::Value as JsonValue;
+
+#[derive(Serialize, Deserialize)]
+struct Person {
+    name: String,
+    age: u8,
+    phones: Vec<String>,
 }
 
-impl Rectangle {
-    fn is_square(&self) -> bool {
-        self.width == self.height
-    }
-}
+fn main() {
+    let json = r#"
+        {
+            "name": "Omar",
+            "age": 23,
+            "phones": [
+                "+48 1234567",
+                "+48 2345678"
+            ]
+        }
+    "#;
 
-fn main() {}
+    let data = serde_json::from_str(json);
 
-fn give_two() -> i32 {
-    2
-}
+    if data.is_ok() {
+        let data: Person = data.unwrap();
 
-#[cfg(test)]
-mod fish_tests {
-    #[test]
-    #[should_panic]
-    fn it_works() {
-        assert_eq!(2 + super::give_two(), 4);
-        panic!("Make this test fail");
-    }
-
-    #[test]
-    #[ignore]
-    fn it_works_2() {
-        assert_eq!(super::give_two() + 2, 5);
-        assert_ne!(2 + super::give_two(), 3);
-    }
-
-    #[test]
-    #[should_panic]
-    fn test_structs() {
-        let r = super::Rectangle {
-            width: 20,
-            height: 10,
-        };
-        assert!(r.is_square());
+        println!("{}", data.name);
+        println!("{}", data.age);
+        println!("{:?}", data.phones);
+    } else {
+        println!("Error: {:?}", data.err());
     }
 }

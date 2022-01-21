@@ -1,7 +1,13 @@
-const MAX_NUMBER: u8 = 255;
-
 fn main() {
-    for n in 1..MAX_NUMBER {
-        println!("{}", n);
-    }
+    let tup1 = (20, "Rust", 30, 3.4, false, (1, 4, 7));
+
+    println!("{}", tup1.2);
+    println!("{}", (tup1.5).2);
+
+    let (a, b, c, d, e, f) = tup1;
+    println!("{}", a);
+    println!("{}", b);
+    println!("{}", c);
+    println!("{}", d);
+    println!("{}", e);
 }

@@ -1,13 +1,21 @@
-extern crate regex;
-use regex::Regex;
+mod fish {
+    fn fish() {
+        println!("Fish");
+    }
+
+    pub fn print_message() {
+        fish();
+        println!("How's it going!")
+    }
+
+    pub mod day {
+        pub fn fish() {
+            println!("Day fish");
+        }
+    }
+}
 
 fn main() {
-    let re = Regex::new(r"(\w{5})").unwrap(); // 5-character word
-    let text = "omarrr";
-    println!("{}", re.is_match(text));
-
-    match re.captures(text) {
-        Some(caps) => println!("{}", caps.get(0).unwrap().as_str()),
-        None => println!("No match"),
-    }
+    fish::print_message();
+    fish::day::fish()
 }

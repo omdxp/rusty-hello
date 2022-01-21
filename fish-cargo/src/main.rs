@@ -1,15 +1,9 @@
 fn main() {
     let mut x = 10;
+    // let xr = &x;
 
-    {
-        let x = 15;
+    let o = &mut x;
+    *o += 1;
 
-        // do stuff with 15
-    }
-
-    let x = "X is a string";
-    println!("{}", x);
-
-    let x = true;
     println!("{}", x);
 }

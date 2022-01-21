@@ -1,0 +1,11 @@
+/Users/Omar/Projects/Rust/rusty-hello/fish-cargo/target/debug/deps/tokio_reactor-017c6d20811e147b.rmeta: /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/lib.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/background.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/poll_evented.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/registration.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/sharded_rwlock.rs
+
+/Users/Omar/Projects/Rust/rusty-hello/fish-cargo/target/debug/deps/libtokio_reactor-017c6d20811e147b.rlib: /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/lib.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/background.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/poll_evented.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/registration.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/sharded_rwlock.rs
+
+/Users/Omar/Projects/Rust/rusty-hello/fish-cargo/target/debug/deps/tokio_reactor-017c6d20811e147b.d: /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/lib.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/background.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/poll_evented.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/registration.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/sharded_rwlock.rs
+
+/Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/lib.rs:
+/Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/background.rs:
+/Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/poll_evented.rs:
+/Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/registration.rs:
+/Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-reactor-0.1.12/src/sharded_rwlock.rs:

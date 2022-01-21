@@ -1,0 +1,13 @@
+/Users/Omar/Projects/Rust/rusty-hello/fish-cargo/target/rls/debug/deps/tokio_uds-64b614702a86520d.rmeta: /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/lib.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/datagram.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/frame.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/incoming.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/listener.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/recv_dgram.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/send_dgram.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/stream.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/ucred.rs
+
+/Users/Omar/Projects/Rust/rusty-hello/fish-cargo/target/rls/debug/deps/tokio_uds-64b614702a86520d.d: /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/lib.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/datagram.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/frame.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/incoming.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/listener.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/recv_dgram.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/send_dgram.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/stream.rs /Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/ucred.rs
+
+/Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/lib.rs:
+/Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/datagram.rs:
+/Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/frame.rs:
+/Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/incoming.rs:
+/Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/listener.rs:
+/Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/recv_dgram.rs:
+/Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/send_dgram.rs:
+/Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/stream.rs:
+/Users/Omar/.cargo/registry/src/github.com-1ecc6299db9ec823/tokio-uds-0.2.7/src/ucred.rs:

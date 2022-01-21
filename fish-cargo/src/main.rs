@@ -1,25 +1,10 @@
-#![allow(dead_code)]
-
-enum Day {
-    Monday,
-    Tuesday,
-    Wednesday,
-    Thursday,
-    Friday,
-    Saturday,
-    Sunday,
-}
-
-impl Day {
-    fn is_weekend(&self) -> bool {
-        match self {
-            &Day::Saturday | &Day::Sunday => true,
-            _ => false,
-        }
-    }
-}
+use std::process::Command;
 
 fn main() {
-    let day = Day::Sunday;
-    println!("{}", day.is_weekend());
+    let output = Command::new("python3")
+        .arg("fish.py")
+        .output()
+        .expect("failed to execute process");
+
+    println!("{}", String::from_utf8_lossy(&output.stdout));
 }
